@@ -470,7 +470,7 @@ it's what we're looking for.
 Using `match()`, we recognize these lexemes in two stages. When we reach, for
 example, `!`, we jump to its switch case. That means we know the lexeme *starts*
 with `!`. Then we look at the next character to determine if we're on a `!=` or
-merely a `!`.
+merely an `!`.
 
 ## Longer Lexemes
 
@@ -495,7 +495,7 @@ It's sort of like `advance()`, but doesn't consume the character. This is called
 <span name="match">**lookahead**</span>. Since it only looks at the current
 unconsumed character, we have *one character of lookahead*. The smaller this
 number is, generally, the faster the scanner runs. The rules of the lexical
-grammar dictate how much lookahead we need. Fortunately, most languages in wide
+grammar dictate how much lookahead we need. Fortunately, most languages in the wild
 use peek only one or two characters ahead.
 
 <aside name="match">
